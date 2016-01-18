@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+html
+    head    
+        meta(charset="utf-8")
+        title Техномарт
+        link(href="css/normalize.css" rel="stylesheet")
+        link(href="css/style.css" rel="stylesheet")
+        link(href="css/symbols-technomart.css" rel="stylesheet")    
+    body  
+        header.main-header
+            div.top-menu.clearfix
+                div.top-menu__layout
+                    a(href="index.html")
+                    h1.top-menu.logo ТЕХНОМАРТ
+                    ul.rules.clearfix
+                        li
+                            div.rules__search 
+                                i.icon-search 
+                                Поиск
+                        li
+                            div.rules__issue-order 
+                                a(href="#") Оформить заказ                    
+                        li
+                            div.rules__basket 
+                                i.icon-basket
+                                Корзина:                
+                                span.basket__count 0
+                        li
+                            div.rules__tab 
+                                i.icon-bookmark
+                                Закладки:                 
+                                span.tab__count 0
+            div.header-info.clearfix
+                div.header-info__layout
+                    p.header-info__content.             
+                        Интернет-магазин
+                        строительных материалов <br>             
+                        и инструментов для ремонта
+                    div.auth
+                        a.btn.btn--signin
+                            i.icon-login 
+                            Войти
+                        a.btn.btn--signup  Регистрация    
+                    div.contacts
+                        div.contacts__phone <i class="icon-phone"></i> +7 (812) 555-05-55
+                        div.contacts__address                        
+                            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  
+            nav.main-menu.clearfix   
+
+                div.main-menu__layout
+
+                    -items = ["Главная","Компания","Каталог","Новости","Спецпредложения","Доставка","Контакты"]
+
+                    ul.main-menu__items
+
+                        each item in items 
+
+                            li.main-menu__item 
+
+                                a(href="#") #{item}
+        main
+            div.top-block
+                div.top-block__layout
+                    div.top-block__row1                
+                        div.banner-card-goods.banner-card-goods--yellow
+                            div.banner-card-goods__layout
+                                div.banner-card-goods__content
+                                    h3.banner-card-goods__header Материалы
+                                    div.banner-card-goods__type На любой вкус
+                                img(src="img/img_bucket.png" width="44" height="65").banner-card-goods__image    
+                        div.banner-card-goods.banner-card-goods--blue
+                            div.banner-card-goods__layout
+                                div.banner-card-goods__content
+                                    h3.banner-card-goods__header Инструмент
+                                    div.banner-card-goods__type На все случаи                           
+                                img(src="img/img_drill.png" width="75" height="61").banner-card-goods__image                                      
+                        div.banner-card-goods.banner-card-goods--pink
+                            div.banner-card-goods__layout
+                                div.banner-card-goods__content
+                                    h3.banner-card-goods__header Техника
+                                    div.banner-card-goods__type Для стройки  
+                                img(src="img/img_tractor.png" width="78" height="62" ).banner-card-goods__image                                   
+                    div.top-block__row2
+                        div.top-block__col1
+                            div.slider  
+                                img(src="img/img_slider_drill.jpg" width="622" height="266" alt="Дрели соседям на радость").slider__image
+                                div.slider__layout                                    
+                                    div.slider__header
+                                        h4 Дрели
+                                        p Соседям на радость!
+                                    a(href="#").btn-lnk Открыть каталог
+                        div.top-block__col2  
+                            div.banner-card-goods.banner-card-goods--green
+                                div.banner-card-goods__layout
+                                    div.banner-card-goods__content
+                                        h3.banner-card-goods__header Скидки 50%
+                                        div.banner-card-goods__type на 350 товаров  
+                                    img(src="img/img_basket.png" width="59" height="72" ).banner-card-goods__image
+                            div.banner-card-goods.banner-card-goods--yellow
+                                div.banner-card-goods__layout
+                                    div.banner-card-goods__content
+                                        h3.banner-card-goods__header Доставка
+                                        div.banner-card-goods__type Бесплатно 
+                                    img(src="img/img_delivery.png" width="75" height="61" ).banner-card-goods__image                                    
+
+                        
+            
+            
+            
+        
+
+            
+                        
+                
+                
+                
+             
+
+                  
+            
+              
+            
+          
+    

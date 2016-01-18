@@ -1,0 +1,294 @@
+/* Размеры элементов */
+/* шрифты */
+/* размеры шрифтов и высота-строки */
+/* цвета */
+/* бардовый */
+@font-face {
+  font-family: "CuprumBold";
+  src: url("../fonts/Cuprum-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CuprumRegular";
+  src: url("../fonts/Cuprum-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CuprumItalic";
+  src: url("../fonts/Cuprum-Italic.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*  ------------- */
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+.icon-search,
+.icon-bookmark,
+.icon-basket,
+.icon-phone {
+  opacity: .3;
+  margin: 0;
+  float: left;
+  padding-right: 12.5px;
+}
+.icon-login {
+  opacity: .3;
+  margin: 0;
+}
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.main-header {
+  background-color: #f1f5f7;
+  margin-bottom: 59px;
+}
+.top-menu {
+  width: 1200px;
+  background-color: #293449;
+}
+.top-menu__layout {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+}
+.logo {
+  position: relative;
+  float: left;
+  width: 220px;
+  padding: 9px 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font: bold 24px/24px "CuprumBold", Arial, sans-serif;
+  color: #ffffff;
+  background-color: #ee3643;
+  /* border-bottom: 5px solid @color-claret; */
+}
+.rules {
+  list-style-type: none;
+  text-align: left;
+  font: normal 17px/18px "CuprumRegular", Arial, sans-serif;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+}
+.rules a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.rules div {
+  padding: 12px 0;
+}
+.rules__search {
+  float: left;
+  text-align: left;
+  margin-left: 14px;
+  width: 150px;
+}
+.rules__tab {
+  float: right;
+  width: 153px;
+}
+.rules__basket {
+  float: right;
+  width: 138px;
+}
+.rules__issue-order {
+  float: right;
+  background-color: #63a63e;
+  text-align: center;
+  width: 150px;
+}
+.header-info {
+  margin-bottom: 40px;
+}
+.header-info__layout {
+  margin: 48.5px auto;
+  padding: 0 10px;
+  width: 940px;
+}
+.header-info__content {
+  float: left;
+  width: 200px;
+  padding: 0 53px;
+  text-align: left;
+  margin: 0;
+  font: italic 16px/23px "CuprumItalic", Arial, sans-serif;
+  color: #ee3643;
+}
+.header-info__content p {
+  text-align: left;
+}
+.contacts {
+  float: right;
+  width: 270px;
+  padding: 0 10px;
+  padding-right: 68px;
+}
+.contacts__phone {
+  padding: 7.5px 0;
+  font: normal 21px/21px "CuprumRegular", Arial, sans-serif;
+  color: #e9292a;
+  border: 3px solid #ffffff;
+}
+.contacts__address {
+  padding-top: 3px;
+  font: normal 14px/24px "CuprumRegular", Arial, sans-serif;
+  color: #32425c;
+  text-align: center;
+}
+.contacts .icon-phone {
+  color: #000000;
+  opacity: .3;
+  font-size: 22px;
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-right: 34px;
+}
+.auth {
+  float: right;
+}
+.auth a {
+  display: inline-block;
+  vertical-align: top;
+}
+.btn {
+  padding: 10.5px 0;
+  font: normal 21px/21px "CuprumRegular", Arial, sans-serif;
+  color: #000000;
+  border: 0;
+  background-color: #ffffff;
+}
+.btn--signin {
+  margin-right: 10px;
+  width: 111px;
+  text-align: left;
+  padding-left: 10px;
+}
+.btn--signup {
+  width: 150px;
+  text-align: center;
+}
+.main-menu__layout {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+}
+.main-menu__items {
+  text-align: center;
+  padding: 17px 0;
+  margin-bottom: 60px;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+.main-menu__item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin-right: 56px;
+}
+.main-menu__item:last-child {
+  margin-right: 0;
+}
+.main-menu a {
+  font: normal 17px/21px "CuprumRegular", Arial, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+.top-block {
+  font-size: 0;
+}
+.top-block__layout {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+}
+.top-block__col1 {
+  float: left;
+  width: 610px;
+}
+.top-block__col2 {
+  float: right;
+  width: 300px;
+}
+.banner-card-goods {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 0;
+  color: #ffffff;
+}
+.banner-card-goods__layout {
+  margin: 0 43px 26px 25px;
+  padding: 0;
+}
+.banner-card-goods:last-of-type {
+  margin-right: 0;
+}
+.banner-card-goods--yellow {
+  background-color: #f6b22d;
+}
+.banner-card-goods--blue {
+  background-color: #4aafde;
+}
+.banner-card-goods--pink {
+  background-color: #cc79d1;
+}
+.banner-card-goods--green {
+  background-color: #85d179;
+}
+.banner-card-goods__content {
+  float: left;
+}
+.banner-card-goods__header {
+  font: bold 24px/24px "CuprumBold", Arial, sans-serif;
+  margin-bottom: 15px;
+}
+.banner-card-goods__type {
+  padding: 7px 0;
+  width: 135px;
+  text-align: center;
+  font: normal 13px/24px "CuprumRegular", Arial, sans-serif;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.15);
+  /* @color-brown; */
+  border: 1px solid transparent;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+.banner-card-goods__image {
+  float: right;
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 31px;
+}
+.slider {
+  width: 622px;
+  height: 266px;
+}
+.slider__layout {
+  padding: 0 25px;
+  position: relative;
+}
+.slider__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  color: #63a63e;
+  width: 622px;
+  height: 105px;
+  text-align: left;
+}
+.slider__header h4 {
+  text-transform: uppercase;
+}

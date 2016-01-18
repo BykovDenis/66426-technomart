@@ -1,0 +1,508 @@
+@import "variables.less";
+
+@font-face{
+    
+    font-family: "CuprumBold";
+    src: url("../fonts/Cuprum-Bold.ttf");
+    font-weight: normal;   
+    font-style: normal;
+    
+}
+
+@font-face{
+    
+    font-family: "CuprumRegular";
+    src: url("../fonts/Cuprum-Regular.ttf");
+    font-weight: normal;   
+    font-style: normal;
+    
+}
+
+@font-face{
+    
+    font-family: "CuprumItalic";
+    src: url("../fonts/Cuprum-Italic.ttf");
+    font-weight: normal;   
+    font-style: normal;
+    
+}
+
+/*  ------------- */
+
+
+body{
+    
+    width: @width-body;
+    margin: 0 auto;
+    
+}
+
+.layout(){
+
+    margin: 0 auto;
+    padding: 0 10px; 
+    width: @width-main-layout;    
+    
+}
+
+.icon-search,
+.icon-bookmark,
+.icon-basket,
+.icon-phone
+{
+    
+    opacity: .3;
+    margin: 0;
+    float: left;
+    padding-right: 12.5px;
+    
+}
+
+.icon-login{
+    
+    opacity: .3;
+    margin: 0;
+    
+}
+
+.clearfix:after{
+    
+    display: table;
+    content: '';
+    clear: both;
+    
+}
+
+.main-header{   
+ 
+    background-color: @color-yellow-light;  
+    margin-bottom: 59px;
+    
+}
+
+.top-menu{
+    
+    width: @width-body;        
+    background-color: @color-blue;
+        
+    &__layout{    
+        
+        .layout
+        
+    }
+    
+}
+
+.logo{
+
+    position: relative;
+
+    float: left;
+    width: 220px;
+    padding: 9px 0;    
+    margin: 0;   
+
+    text-align: center;
+    text-transform: uppercase;            
+
+    font: bold @font-size-h1/@line-height @font-family-cuprumbold;
+    color: @color-white;
+    background-color: @color-red;
+
+    /* border-bottom: 5px solid @color-claret; */
+
+}  
+
+.rules{
+    
+    list-style-type: none;
+    text-align: left;
+    
+    font: normal ((@font-size-base+4px))/ ((@line-height - 6px)) @font-family-cuprumregular;
+    color: @color-white;  
+    
+    padding: 0;
+    margin: 0;
+    
+    a{        
+        
+        color: @color-white;         
+        text-decoration: none;
+        
+    }
+    
+    div{
+        
+        padding: 12px 0;   
+        
+    }   
+
+
+    &__search{
+
+        float: left;        
+        text-align: left;
+        margin-left:14px;
+        width: 150px;
+
+    }
+
+    &__tab{
+
+        float: right;
+        width: 153px;
+        
+
+    }
+
+    &__basket{
+
+        float: right;
+        width: 138px;
+       
+
+    }
+
+    &__issue-order{
+        
+        float: right;
+        background-color: @color-green;
+        text-align: center;
+        width: 150px;
+        
+
+    }
+
+}
+
+.header-info{
+    
+    margin-bottom: 40px;
+    
+    &__layout{
+        
+        margin: 48.5px auto;
+        padding: 0 10px; 
+        width: @width-main-layout;   
+        
+    }
+    
+    &__content{
+        
+        float: left;
+        width: 200px;
+        padding: 0 53px;
+        text-align: left;
+        margin:0;
+        
+        font: italic ((@font-size-base+3px))/((@line-height - 1px)) @font-family-cuprumitalic;
+        color: @color-red;        
+        
+        p{
+            
+            text-align: left;
+            
+        }
+        
+    }    
+        
+}
+
+.contacts{
+    
+    float: right;
+    
+    width: 270px;
+    padding: 0 10px;
+    padding-right: 68px;
+    
+    &__phone{
+        
+        padding: 7.5px 0;
+                
+        font: normal ((@font-size-base+8px))/((@line-height - 3px)) @font-family-cuprumregular;
+        color: @color-red1;
+        
+        
+        border: 3px solid @color-white;
+        
+        
+    }
+    
+    &__address{
+        
+        padding-top: 3px;
+        
+        font: normal ((@font-size-base+1px))/((@line-height)) @font-family-cuprumregular;
+        color: @color-blue-dark;        
+        text-align: center;
+        
+    }
+    
+    .icon-phone{
+        
+        color: @color-black;
+        opacity: .3;
+        font-size: (@font-size-base+9px);
+        padding-top: 2px;
+        padding-left:5px;
+        padding-right: 34px;
+        
+    }
+    
+}
+
+.auth{
+    
+    float: right;
+    
+    a{
+        
+        display: inline-block;
+        vertical-align: top;
+        
+    }
+}
+
+.btn{
+    
+    padding: 10.5px 0;
+        
+    font: normal ((@font-size-base + 8px))/((@line-height - 3px)) @font-family-cuprumregular;
+    color: @color-black;    
+    
+    border: 0;
+    
+    
+    background-color: @color-white;
+    
+    &--signin{
+        
+        margin-right: 10px;
+        width: 111px;
+        text-align: left;
+        padding-left: 10px;
+        
+        
+    }
+    
+    &--signup{
+        
+        width: 150px;
+        text-align:center;
+        
+    }
+    
+}
+
+.main-menu{
+    
+
+    &__layout{
+        
+        .layout
+        
+    }
+    
+    &__items{
+        
+        text-align: center;
+        padding: 17px 0;        
+        margin-bottom: 60px;
+       
+        background-color: @color-blue-dark;
+        border-bottom: 5px solid @color-blue;
+        
+            
+        
+    }
+    
+    &__item{
+        
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        margin-right: 56px;
+        
+    }
+    
+    &__item:last-child{
+        
+        margin-right: 0;
+        
+    }
+    
+    a{
+        
+        font: normal ((@font-size-base + 4px))/((@line-height - 3px)) @font-family-cuprumregular;   
+        color: @color-white;          
+        text-decoration: none;
+        
+    }
+    
+}
+
+.top-block{
+    
+    font-size: 0;
+    
+    &__layout{
+        
+        .layout
+        
+    }
+    
+    &__col1{
+        
+        float: left;  
+        width: 610px;
+        
+    }
+    
+    &__col2{
+        
+        float:right;
+        width: 300px;
+        
+    }        
+            
+    
+}
+
+.banner-card-goods{
+    
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 300px;
+    height: 123px;
+    
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    font-size: 0;
+    color: @color-white;
+    
+    &__layout{
+       
+        margin: 0 43px 26px 25px;
+        padding: 0;
+        
+    }    
+    
+    &:last-of-type{
+        
+        margin-right:0;    
+        
+    } 
+
+    
+    &--yellow{
+        
+        background-color: @color-yellow1;        
+        
+    }
+    
+    &--blue{
+        
+        background-color: @color-blue-light; 
+        
+    }   
+    
+    &--pink{
+        
+        background-color: @color-pink; 
+        
+    }
+    
+    &--green{
+        
+        background-color: @color-green1; 
+        
+    }    
+    
+    &__content{
+        
+        float: left;
+        
+    }
+    
+    &__header{
+        
+        font: bold ((@font-size-base + 11px))/@line-height @font-family-cuprumbold;           
+        
+        margin-bottom: 15px;
+        
+    }    
+    
+    &__type{
+        
+        padding: 7px 0;
+        width: 135px;
+        
+        text-align: center;
+        
+        font: normal ((@font-size-base))/@line-height @font-family-cuprumregular;
+        text-transform: uppercase;
+        
+        background-color: rgba(0, 0, 0, .15); /* @color-brown; */
+        
+        border: 1px solid transparent;
+        border-radius: 5px;     
+        
+    }
+    
+    &__image{
+        
+        float: right;
+        display: block;
+        
+        padding-top: 27px;
+        padding-bottom: 31px;            
+        
+    }
+    
+}
+
+.slider{
+    
+    width: 622px;
+    height: 266px;
+    
+    &__layout{
+                
+        padding: 0 25px;
+        position: relative;
+        
+    }
+    
+    &__header{
+        
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 100;
+        
+        color: @color-green;
+        width: 622px;
+        height: 105px;
+        
+        text-align: left;
+        
+        
+        h4{
+            
+            text-transform: uppercase;
+            
+        }
+        
+    }
+    
+    
+}
+
+
+
+
+
+
