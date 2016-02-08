@@ -5,22 +5,35 @@
     <title>Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet"/>
     <link href="css/symbols-technomart.css" rel="stylesheet"/>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.min.css" rel="stylesheet"/>
   </head>
-  <body> 
+  <body onload="javascript:slider()"> 
     <header class="main-header">
       <div class="top-menu clearfix">
         <div class="top-menu__layout"><a href="index.html">
             <h1 class="top-menu logo">ТЕХНОМАРТ </h1></a>
           <ul class="rules clearfix"> 
             <li>
-              <input type="text" placeholder="Поиск:" name="search" class="rules__search"/><i class="icon-search">                                </i>
+              <input type="text" placeholder="Поиск:" name="search" class="rules__search"/>
+			  <i class="icon-search"></i>
             </li>
             <li>
-              <div class="rules__issue-order"> <a href="#">Оформить заказ                    </a></div>
+			  <div class="rules__issue-order"> 
+			    <a href="#">Оформить заказ</a>
+			  </div>
             </li>
-            <li><a href="#" class="rules__basket"><i class="icon-basket"></i>Корзина:                <span class="basket__count">0</span></a></li>
-            <li><a href="#" class="rules__tab"> <i class="icon-bookmark"></i>Закладки:                 <span class="tab__count">0</span></a></li>
+            <li>
+			  <a href="#" class="rules__basket">
+			    <i class="icon-basket"></i>
+			  Корзина:                
+			  <span class="basket__count">0</span></a></li>
+            <li>
+			  <a href="#" class="rules__tab"> 
+			    <i class="icon-bookmark"></i>
+			    Закладки:
+			  <span class="tab__count">0</span>
+			  </a>
+			</li>
           </ul>
         </div>
       </div>
@@ -32,14 +45,21 @@
             и инструментов для ремонта
           </p>
           <div class="contacts">
-            <div class="contacts__phone"><i class="icon-phone"></i> +7 (812) 555-05-55</div>
-            <div class="contacts__address">
-                                     
+            <div class="contacts__phone">
+			  <i class="icon-phone"></i> 
+			  +7 (812) 555-05-55
+			</div>
+            <div class="contacts__address">                                     
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8                          
             </div>
           </div>
           <div class="auth auth--checkin clearfix">   
-            <div class="auth__layout"><a href="#" class="btn btn--signup"> Регистрация  </a><a href="#" class="btn btn--signin"><i class="icon-login"> </i>Войти</a>
+            <div class="auth__layout">
+			  <a href="#" class="btn btn--signup"> Регистрация  </a>
+			  <a href="#" class="btn btn--signin">
+			  <i class="icon-login"> </i>
+			  Войти
+			  </a>
               <ul class="auth__menu">
                 <li> </li>
               </ul>
@@ -78,37 +98,67 @@
                 <div class="banner-card-goods__content">
                   <h3 class="banner-card-goods__header">Материалы</h3><a href="#" class="banner-card-goods__type">На любой вкус</a>
                 </div>
-                <div class="banner-card-goods__img banner-card-goods__img--matherial">                                    <img src="img/img_bucket.png" width="44" height="65" alt="Материалы" class="banner-card-goods__image"/></div>
+                <div class="banner-card-goods__img banner-card-goods__img--matherial">
+				  <img src="img/img_bucket.png" width="44" height="65" alt="Материалы" class="banner-card-goods__image"/>
+				</div>
               </div>
             </div>
             <div class="banner-card-goods banner-card-goods--blue">
               <div class="banner-card-goods__layout">
                 <div class="banner-card-goods__content">
-                  <h3 class="banner-card-goods__header">Инструмент</h3><a href="#" class="banner-card-goods__type">На все случаи </a>
+                  <h3 class="banner-card-goods__header">Инструмент</h3>
+				  <a href="#" class="banner-card-goods__type">На все случаи </a>
                 </div>
-                <div class="banner-card-goods__img">  <img src="img/img_drill.png" width="75" height="61" alt="Инструмент"/></div>
+                <div class="banner-card-goods__img">  
+				  <img src="img/img_drill.png" width="75" height="61" alt="Инструмент"/>
+				</div>
               </div>
             </div>
             <div class="banner-card-goods banner-card-goods--pink">
               <div class="banner-card-goods__layout">
                 <div class="banner-card-goods__content">
-                  <h3 class="banner-card-goods__header">Техника</h3><a href="#" class="banner-card-goods__type">Для стройки  </a>
+                  <h3 class="banner-card-goods__header">Техника</h3>
+				  <a href="#" class="banner-card-goods__type">Для стройки  </a>
                 </div>
-                <div class="banner-card-goods__img">      <img src="img/img_tractor.png" width="78" height="62" alt="Техника" class="banner-card-goods__image"/></div>
+                <div class="banner-card-goods__img">      
+				  <img src="img/img_tractor.png" width="78" height="62" alt="Техника" class="banner-card-goods__image"/>
+				</div>
               </div>
             </div>
           </div>
           <div class="top-block__row2">
             <div class="top-block__col1">
-              <div class="slider"> <img src="img/img_slider_drill2.jpg" width="622" height="266" alt="Дрели соседям на радость" class="slider__image"/>
+              <div id="slider1" class="slider">                                                                  
                 <div class="slider__header">                                                                           
                   <div class="slider__layout"> 
                     <h4 class="slider__title">Перфораторы</h4>
-                    <p class="slider__content">Настроящие мужские игрушки                                </p>
+                    <p class="slider__content">Настроящие мужские игрушки </p>
+					  <a href="#" class="btn-lnk btn-lnk--slider">Открыть каталог </a>
                   </div>
                 </div>
-                <div class="slider__layout">                                                                                          
-                  <div class="slider__control clearfix">                                   <a href="#"><i class="icon-left"></i></a><a href="#">   <i class="icon-right"></i></a></div><a href="#" class="btn-lnk btn-lnk--slider">Открыть каталог</a>
+              </div>
+              <div id="slider2" class="slider">                                                                  
+                <div class="slider__header">                                                                           
+                  <div class="slider__layout"> 
+                    <h4 class="slider__title">Дрели</h4>
+                    <p class="slider__content">Соседям на радость</p>
+					<a href="#" class="btn-lnk btn-lnk--slider">Открыть каталог </a>
+                  </div>
+                </div>
+              </div>
+              <div class="control">                           
+                <div class="control__way">                                 
+					<i id="prev" class="control__prev">
+					  <i class="icon-left"></i>
+					</i>
+					<i id="next" class="control__next">   
+					  <i class="icon-right"></i>
+					</i></div>
+                <div class="control__panel">                                  
+                  <input type="radio" name="control1" id="control1" checked="checked" class="control__input"/>
+                  <label for="control1" class="control__label"> 1</label>
+                  <input type="radio" name="control1" id="control2" class="control__input"/>
+                  <label for="control2" class="control__label">1                                                                                                                                     </label>
                 </div>
               </div>
             </div>
@@ -118,15 +168,20 @@
                   <div class="banner-card-goods__content">
                     <h3 class="banner-card-goods__header">Скидки 50%</h3><a href="#" class="banner-card-goods__type">на 350 товаров  </a>
                   </div>
-                  <div class="banner-card-goods__img banner-card-goods__img--discount">                                           <img src="img/img_basket.png" width="59" height="72" alt="Скидки 50%"/></div>
+                  <div class="banner-card-goods__img banner-card-goods__img--discount">                                           
+				    <img src="img/img_basket.png" width="59" height="72" alt="Скидки 50%"/>
+				  </div>
                 </div>
               </div>
               <div class="banner-card-goods banner-card-goods--yellow">
                 <div class="banner-card-goods__layout">
                   <div class="banner-card-goods__content">
-                    <h3 class="banner-card-goods__header">Доставка</h3><a href="#" class="banner-card-goods__type">Бесплатно </a>
+                    <h3 class="banner-card-goods__header">Доставка</h3>
+					<a href="#" class="banner-card-goods__type">Бесплатно </a>
                   </div>
-                  <div class="banner-card-goods__img">                                          <img src="img/img_delivery.png" width="75" height="61" alt="Доставка"/></div>
+                  <div class="banner-card-goods__img">                                          
+				    <img src="img/img_delivery.png" width="75" height="61" alt="Доставка"/>
+				  </div>
                 </div>
               </div>
             </div>
@@ -136,55 +191,74 @@
       <div class="popular">
         <div class="popular__layout clearfix">
           <div class="popular__header clearfix">
-            <h2 class="popular__title">Популярные товары:</h2><a href="#" class="btn-lnk btn-lnk--popular">Все популярные товары</a>
+            <h2 class="popular__title">Популярные товары:</h2>
+			<a href="#" class="btn-lnk btn-lnk--popular">Все популярные товары</a>
           </div>
           <div class="popular__items">
             <div class="goods"> 
-              <div class="goods-active"><i class="icon-basket"></i><a href="#" class="goods-active__buy">Купить</a><a href="#" class="goods-active__tab">В закладки                        </a></div>
-              <div class="goods__image"><img src="img/img_bosch_bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000"/></div>
+              <div class="goods-active">
+			    <i class="icon-basket"></i>
+				<a href="#" class="goods-active__buy">Купить</a>
+			    <a href="#" class="goods-active__tab">В закладки</a>
+			  </div>
+              <div class="goods__image">
+			    <img src="img/img_bosch_bfg9000.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 9000"/>
+		      </div>
               <div class="goods__layout">
                 <p class="goods__title">Перфоратор BOSCH BFG 9000</p>
                 <p class="goods__price-old">32500 Р.</p>
-                <div class="goods__price"><span>25500 Р.</span>
-                  <div class="goods__price-label goods__price-label--top"></div>
-                  <div class="goods__price-label goods__price-label--bottom">                                   </div>
+                <div class="goods__price">                                   
+                  <div class="goods__price-label"> 25500 Р. </div>
                 </div>
               </div>
             </div>
             <div class="goods"> 
-              <div class="goods-active"><i class="icon-basket"></i><a href="#" class="goods-active__buy">Купить</a><a href="#" class="goods-active__tab">В закладки                        </a></div>
-              <div class="goods__image"><img src="img/img_bosch_bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000"/></div>
+              <div class="goods-active">
+			    <i class="icon-basket"></i><a href="#" class="goods-active__buy">Купить</a>
+				<a href="#" class="goods-active__tab">В закладки                        </a></div>
+              <div class="goods__image">
+			    <img src="img/img_bosch_bfg3000.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 3000"/>
+				</div>
               <div class="goods__layout">
                 <p class="goods__title">Перфоратор BOSCH BFG 3000</p>
                 <p class="goods__price-old">22500 Р.</p>
-                <div class="goods__price"> <span>15500 Р.       </span>
-                  <div class="goods__price-label goods__price-label--top"></div>
-                  <div class="goods__price-label goods__price-label--bottom">   </div>
+                <div class="goods__price"> 
+                  <div class="goods__price-label">15500 Р. </div>
                 </div>
               </div>
             </div>
             <div class="goods">  
-              <div class="goods-active"><i class="icon-basket"></i><a href="#" class="goods-active__buy">Купить</a><a href="#" class="goods-active__tab">В закладки                        </a></div>
-              <div class="goods__image"><img src="img/img_bosch_bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000"/></div>
+              <div class="goods-active">
+			    <i class="icon-basket"></i>
+				<a href="#" class="goods-active__buy">Купить</a>
+				<a href="#" class="goods-active__tab">В закладки</a>
+			  </div>
+              <div class="goods__image">
+			    <img src="img/img_bosch_bfg6000.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 6000"/>
+			  </div>
               <div class="goods__layout">
                 <p class="goods__title">Перфоратор BOSCH BFG 6000</p>
                 <p class="goods__price-old">30500 Р.</p>
-                <div class="goods__price"> <span>25500 Р.     </span>
-                  <div class="goods__price-label goods__price-label--top"></div>
-                  <div class="goods__price-label goods__price-label--bottom">                                       </div>
+                <div class="goods__price"> 
+                  <div class="goods__price-label">25500 Р.</div>
                 </div>
               </div>
             </div>
             <div class="goods"> 
-              <div class="goods-active"><i class="icon-basket"></i><a href="#" class="goods-active__buy">Купить</a><a href="#" class="goods-active__tab">В закладки                        </a></div>
+              <div class="goods-active">
+			    <i class="icon-basket"></i>
+				<a href="#" class="goods-active__buy">Купить</a>
+				<a href="#" class="goods-active__tab">В закладки                        </a>
+			  </div>
               <div class="goods__new"></div>
-              <div class="goods__image"><img src="img/img_bosch_bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000"/></div>
+              <div class="goods__image">
+			    <img src="img/img_bosch_bfg2000.jpg" width="218" height="168" alt="Перфоратор BOSCH BFG 2000"/>
+			  </div>
               <div class="goods__layout">
                 <p class="goods__title">Перфоратор BOSCH BFG 2000</p>
                 <p class="goods__price-old">&nbsp;</p>
-                <div class="goods__price"> <span>12500 Р. </span>
-                  <div class="goods__price-label goods__price-label--top"></div>
-                  <div class="goods__price-label goods__price-label--bottom">                                       </div>
+                <div class="goods__price"> 
+                  <div class="goods__price-label">12500 Р.</div>
                 </div>
               </div>
             </div>
@@ -193,17 +267,47 @@
         <div class="brands">
           <div class="brands__layout clearfix"> 
             <div class="brands__header clearfix">
-              <h2 class="brands__title">Популярные производители:</h2><a href="#" class="btn-lnk btn-lnk--popular">Все производители   </a>
+              <h2 class="brands__title">Популярные производители:</h2>
+			  <a href="#" class="btn-lnk btn-lnk--popular">Все производители   </a>
             </div>
             <ul class="brands__items">
-              <li class="brands__item"><a href="#"> <img src="img/img_brand_bosch.jpg" width="126" height="88" alt="Bosch"/></a></li>
-              <li class="brands__item"><a href="#"> <img src="img/img_brand_makita.jpg" width="123" height="88" alt="makita"/></a></li>
-              <li class="brands__item"><a href="#"> <img src="img/img_brand_dewalt.jpg" width="146" height="88" alt="dewalt"/></a></li>
-              <li class="brands__item"><a href="#"> <img src="img/img_brand_interskol.jpg" width="200" height="88" alt="interskol"/></a></li>
-              <li class="brands__item"><a href="#"> <img src="img/img_brand_hitachi.jpg" width="169" height="88" alt="hitachi"/></a></li>
-              <li class="brands__item"><a href="#"> <img src="img/img_brand_lg.jpg" width="121" height="88" alt="lg"/></a></li>
-              <li class="brands__item"><a href="#"> <img src="img/img_brand_aeg.jpg" width="151" height="88" alt="aeg"/></a></li>
-              <li class="brands__item"><a href="#"> <img src="img/img_brand_metabo.jpg" width="204" height="88" alt="metabo"/></a></li>
+              <li class="brands__item">
+			    <a href="#"> 
+			      <img src="img/img_brand_bosch.jpg" width="126" height="88" alt="Bosch"/>
+				</a>
+			  </li>
+              <li class="brands__item">
+			    <a href="#"> 
+				  <img src="img/img_brand_makita.jpg" width="123" height="88" alt="makita"/>
+				</a>
+				</li>
+              <li class="brands__item">
+			    <a href="#"> 
+			      <img src="img/img_brand_dewalt.jpg" width="146" height="88" alt="dewalt"/>
+				</a>
+		      </li>
+              <li class="brands__item">
+			    <a href="#"> 
+			      <img src="img/img_brand_interskol.jpg" width="218" height="143" alt="interskol"/></a>
+		      </li>
+              <li class="brands__item">
+			    <a href="#"> 
+				  <img src="img/img_brand_hitachi.jpg" width="169" height="88" alt="hitachi"/>
+				</a>
+			  </li>
+              <li class="brands__item">
+			    <a href="#"> <img src="img/img_brand_lg.jpg" width="121" height="88" alt="lg"/></a>
+			  </li>
+              <li class="brands__item">
+			    <a href="#"> 
+				  <img src="img/img_brand_aeg.jpg" width="151" height="88" alt="aeg"/>
+				</a>
+			  </li>
+              <li class="brands__item">
+			    <a href="#"> 
+				  <img src="img/img_brand_metabo.jpg" width="204" height="88" alt="metabo"/>
+				</a>
+			  </li>
             </ul>
           </div>
         </div>
@@ -268,20 +372,36 @@
               Вы можете забрать товар сами, <br>
               заехав в наш офис:
             </p>
-            <div class="information__map"><img src="img/img_map.jpg" width="300" height="158" alt="Заблудились? Напишите нам!"/></div><a href="#" class="btn-lnk btn-lnk--information2">Заблудились? Напишите нам!</a>
+            <div class="information__map">
+			  <img src="img/img_map.jpg" width="300" height="158" alt="Заблудились? Напишите нам!"/>
+			</div>
+			  <a href="#" class="btn-lnk btn-lnk--information2">Заблудились? Напишите нам!</a>
           </div>
         </div>
       </div>
     </main>
     <footer class="main-footer">
       <div class="main-footer__layout">
-        <div class="main-footer__row1 clearfix"><a href="index.html"><b class="logo logo--footer">ТЕХНОМАРТ</b></a>
+        <div class="main-footer__row1 clearfix">
+		  <a href="index.html">
+		    <b class="logo logo--footer">ТЕХНОМАРТ</b>
+		  </a>
           <ul class="main-footer__menu">
-            <li> <a href="#">Компания</a></li>
-            <li> <a href="#">Новости</a></li>
-            <li> <a href="catalog.html">Каталог</a></li>
-            <li>    <a href="#">Доставка</a></li>
-            <li>     <a href="#">Контакты                                   </a></li>
+            <li> 
+			  <a href="#">Компания</a>
+			</li>
+            <li> 
+			  <a href="#">Новости</a>
+			</li>
+            <li> 
+			  <a href="catalog.html">Каталог</a>
+			</li>
+            <li>
+			  <a href="#">Доставка</a>
+			</li>
+            <li>     
+			  <a href="#">Контакты</a>
+			</li>
           </ul>
         </div>
         <div class="main-footer__row2 clearfix">
@@ -291,10 +411,18 @@
             
           </p>
           <ul class="main-footer__menu main-footer__menu--submenu">
-            <li><a href="#">Материалы</a></li>
-            <li><a href="#">Техника</a></li>
-            <li><a href="#">Инструмент</a></li>
-            <li><a href="#">Спецпредложения                                </a></li>
+            <li>
+			  <a href="#">Материалы</a>
+			</li>
+            <li>
+			  <a href="#">Техника</a>
+			</li>
+            <li>
+			  <a href="#">Инструмент</a>
+			</li>
+            <li>
+			  <a href="#">Спецпредложения</a>
+			</li>
           </ul>
         </div>
       </div>
@@ -320,5 +448,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
