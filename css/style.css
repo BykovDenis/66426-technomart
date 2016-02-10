@@ -1,3 +1,89 @@
+@charset "UTF-8";
+
+ @font-face {
+  font-family: 'symbols-technomart';
+  src: url('../fonts/symbols-technomart.eot?22619757');
+  src: url('../fonts/symbols-technomart.eot?22619757#iefix') format('embedded-opentype'),
+       url('../fonts/symbols-technomart.woff?22619757') format('woff'),
+       url('../fonts/symbols-technomart.ttf?22619757') format('truetype'),
+       url('../fonts/symbols-technomart.svg?22619757#symbols-technomart') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-technomart';
+    src: url('../font/symbols-technomart.svg?22619757#symbols-technomart') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-technomart";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-left:before { content: '\3c'; } /* '&lt;' */
+.icon-right:before { content: '\3e'; } /* '&gt;' */
+.icon-basket:before { content: '\62'; } /* 'b' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-vk:before { content: '\76'; } /* 'v' */
+.icon-up:before { content: '\2c4'; } /* '˄' */
+.icon-down:before { content: '\2c5'; } /* '˅' */
+.icon-left-big:before { content: '\2190'; } /* '←' */
+.icon-right-big:before { content: '\2192'; } /* '→' */
+.icon-login:before { content: '\2386'; } /* '⎆' */
+.icon-logout:before { content: '\241b'; } /* '␛' */
+.icon-up-dir:before { content: '\25b2'; } /* '▲' */
+.icon-down-dir:before { content: '\25bc'; } /* '▼' */
+.icon-circle:before { content: '\25cb'; } /* '○' */
+.icon-circle-dot:before { content: '\25cf'; } /* '●' */
+.icon-star:before { content: '\2605'; } /* '★' */
+.icon-check-off:before { content: '\2610'; } /* '☐' */
+.icon-check-on:before { content: '\2611'; } /* '☑' */
+.icon-youtube:before { content: '\f39e'; } /* '' */
+.icon-home:before { content: '🏠'; } /* '\1f3e0' */
+.icon-user:before { content: '👨'; } /* '\1f468' */
+.icon-phone:before { content: '📞'; } /* '\1f4de' */
+.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
+.icon-search:before { content: '🔍'; } /* '\1f50d' */
+.icon-bookmark:before { content: '🔖'; } /* '\1f516' */
+
+/* Размеры элементов */
+/* шрифты */
+/* размеры шрифтов и высота-строки */
+/* цвета */
+/* бардовый */
 @font-face {
   font-family: "CuprumBold";
   src: url("../fonts/Cuprum-Bold.ttf");
@@ -111,6 +197,16 @@ body {
   font-size: 23px;
   line-height: 18px;
   opacity: .3;
+}
+.icon-close {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url("../img/icon_close.png") 0 0 no-repeat;
+  cursor: pointer;
 }
 .clearfix:after {
   display: table;
@@ -485,6 +581,15 @@ body {
   display: inline-block;
   vertical-align: top;
 }
+
+.breadcrumbs__item:hover{
+	text-decoration: underline;
+}
+
+.breadcrumbs__item:last-of-type{	
+  margin-top: 1px;	
+}
+
 .breadcrumbs__item a {
   text-transform: uppercase;
   font: normal 13px / 20px "PTSansRegular", Arial, sans-serif;
@@ -835,6 +940,9 @@ body {
 .slider-price__means-max input:focus {
   border: none;
 }
+.popular {
+  position: relative;
+}
 .popular--gray {
   background-color: #f2f6f8;
 }
@@ -876,6 +984,7 @@ body {
 }
 .popular__text--about {
   margin-bottom: 68px;
+  letter-spacing: 0.009em;
 }
 .btn-lnk {
   display: inline-block;
@@ -907,15 +1016,40 @@ body {
   width: 230px;
 }
 .btn-lnk--information {
-  width: 200px;
+  width: 220px;
+  outline: none;
 }
-.btn-lnk--information2 {
-  width: 280px;
+.btn-lnk--information2,
+.btn-lnk--message-send {
+  width: 100%;
+  outline: none;
+}
+.btn-lnk--order {
+  margin-right: 15px;
+  width: 220px;
+  outline: none;
+}
+.btn-lnk--basket {
+  margin-right: 0;
+  width: 220px;
+  outline: none;
+  background-color: #ffffff;
+  color: #000000;
+}
+.btn-lnk--basket:hover,
+.btn-lnk--basket:active {
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: underline;
+}
+.btn-lnk--credit {
+  margin-top: 7px;
+  width: 195px;
 }
 .goods-active {
   display: none;
   position: absolute;
-  top: 29px;
+  top: 28px;
   left: 0;
   background-color: #ffffff;
   padding: 15px 40px;
@@ -925,41 +1059,48 @@ body {
   display: block;
 }
 .goods-active .icon-basket {
-  padding: 9px 0;
-  padding-left: 8px;
+  padding: 0;
+  padding-left: 12px;
   padding-right: 17px;
   font-size: 17px;
-  line-height: 16px;
+  line-height: 20px;
   color: #ffffff;
   opacity: .3;
 }
 .goods-active__buy {
+  position: relative;
   display: block;
-  padding: 9.5px 0;
+  padding: 7.5px 0;
   margin-bottom: 8px;
   width: 135px;
-  background: #63a63e;
-  font: normal 14px / 16px "CuprumRegular", Arial, sans-serif;
+  background-color: #63a63e;
+  font: normal 14px / 20px "CuprumRegular", Arial, sans-serif;
   color: #ffffff;
   text-align: left;
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
   border-bottom: 3px solid #367315;
   -webkit-border-radius: 3px;
           border-radius: 3px;
+  outline: none;
 }
 .goods-active__tab {
   display: block;
   padding: 8px 0;
-  width: 129px;
-  text-align: center;
+  padding-left: 12px;
+  width: 135px;
   font: normal 14px / 16px "CuprumRegular", Arial, sans-serif;
   color: #32425c;
   text-decoration: none;
   text-transform: uppercase;
+  background-color: #ffffff;
+  border: none;
   border: 3px solid #367315;
   -webkit-border-radius: 3px;
           border-radius: 3px;
+  text-align: center;
+  outline: none;
 }
 .goods-active__buy:hover {
   background-color: #5fbb2d;
@@ -1196,7 +1337,15 @@ body {
 }
 .service__about img {
   float: right;
-  margin-top: 23px;
+  /* margin-top: 23px;*/
+}
+
+.service__about:nth-of-type(2) img{    
+    margin-top: 21px;    
+}
+.service__about:nth-of-type(3),
+.service__about:nth-of-type(4) {
+  display: none;
 }
 .service__col1 {
   float: left;
@@ -1225,8 +1374,12 @@ body {
   width: 468px;
   height: 261px;
 }
+.service__item--active .service__about {
+  display: block;
+}
 .information {
   margin: 83px 0;
+  position: relative;
 }
 .information__layout {
   margin: 0 auto;
@@ -1236,6 +1389,7 @@ body {
 .information__col1 {
   float: left;
   width: 540px;
+  position: relative;
 }
 .information__col2 {
   float: right;
@@ -1278,6 +1432,134 @@ body {
 .information__map {
   margin-top: 33px;
   margin-bottom: 33px;
+  cursor: pointer;
+}
+.information__map--hover {
+  position: absolute;
+  display: none;
+  z-index: 100;
+  width: 940px;
+  height: 446px;
+  bottom: -29px;
+  left: 133px;
+  background-color: #e5e5e5;
+  background: url("../img/img_map_hover.jpg") -133px -256px no-repeat;
+  -webkit-box-shadow: 0 0 12px 3px #c4c3c4;
+          box-shadow: 0 0 12px 3px #c4c3c4;
+}
+.about {
+  position: absolute;
+  display: none;
+  height: 423px;
+  width: 620px;
+  top: 118px;
+  left: 161px;
+  z-index: 1;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  -webkit-box-shadow: 0 15px 27px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 15px 27px 10px rgba(0, 0, 0, 0.5);
+}
+.about__layout {
+  margin: 0 80px;
+}
+.about__col1 {
+  float: left;
+  padding-top: 48px;
+}
+.about__col2 {
+  float: right;
+  padding-top: 48px;
+}
+.about__row2 {
+  margin-top: 22px;
+  margin-bottom: 37px;
+}
+.about input[type="text"] {
+  display: block;
+  padding: 8px 0;
+  padding-left: 13px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 220px;
+  border: 2px solid #d7dcde;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font: normal 13px / 18px "PTSansRegular", Arial, sans-serif;
+  color: #999999;
+  outline: none;
+}
+.about__label-name,
+.about__label-email,
+.about__label-message {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 7px;
+  font: normal 18px / 18px "CuprumRegular", Arial, sans-serif;
+  color: #000000;
+}
+.about__message {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px 0;
+  padding-left: 13px;
+  width: 100%;
+  height: 114px;
+  border: 2px solid #d7dcde;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font: normal 13px / 18px "PTSansRegular", Arial, sans-serif;
+  color: #999999;
+  outline: none;
+}
+.about__message-send {
+  background-color: #f1f1f1;
+  padding: 35px 0;
+}
+.basket-dialog {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 620px;
+  height: 282px;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  -webkit-box-shadow: 0 42px 27px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 42px 27px 10px rgba(0, 0, 0, 0.4);
+  z-index: 500;
+}
+.basket-dialog__layout {
+  margin: 0 80px;
+}
+.basket-dialog__check {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 33px;
+  width: 66px;
+  height: 65px;
+  background: url(../img/icon_check.png) 15px 18px no-repeat #63a63e;
+  color: #ffffff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+.basket-dialog__content {
+  padding: 47px 0;
+  margin-bottom: 8px;
+  font: normal 30px / 16px "CuprumRegular", Arial, sans-serif;
+  color: #000000;
+  text-align: left;
+}
+.basket-dialog__actions {
+  background-color: #f1f1f1;
+  padding: 37px 0;
 }
 /* Каталог товаров */
 .catalog__layout {
@@ -1434,7 +1716,7 @@ body {
   float: right;
   font-size: 0;
   padding: 2.5px 0;
-  margin-right: 32px;
+  margin-right: 39px;
 }
 .catalog-items__sort {
   padding: 7px 0;
