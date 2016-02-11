@@ -220,7 +220,6 @@ body {
 .top-menu {
   width: 1200px;
   background-color: #293449;
-  max-height: 42px;
 }
 .top-menu__layout {
   margin: 0 auto;
@@ -274,7 +273,6 @@ body {
   text-align: left;
   padding: 12px 0;
   padding-left: 50px;
-  max-height: 42px;
   width: 270px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -726,16 +724,16 @@ body {
 .slider__header {
   -o-background-size: 622px 266px;
      background-size: 622px 266px;
-  width: 620px;
-  height: 216px;
+  width: 622px;
+  height: 266px;
   padding: 25px 0 23px 0;
   margin-bottom: 4px;
 }
 .slider:first-of-type .slider__header {
-  background: url(../img/img_slider_shadow.png) 0 0 no-repeat, url(../img/img_slider_drill1.jpg) 0 0 no-repeat #998f87;
+  background: url(../img/img_slider_shadow.png) 0 0 no-repeat, url(../img/img_slider_drill1.jpg) 0 0 no-repeat;
 }
 .slider:nth-of-type(2) .slider__header {
-  background: url(../img/img_slider_shadow2.png) 0 0 no-repeat, url(../img/img_slider_drill2.jpg) 0 0 no-repeat #998f87;
+  background: url(../img/img_slider_shadow2.png) 0 0 no-repeat, url(../img/img_slider_drill2.jpg) 0 0 no-repeat;
 }
 .slider__layout {
   padding: 0 25px;
@@ -990,7 +988,6 @@ body {
 }
 .btn-lnk {
   display: inline-block;
-  vertical-align: top;
   padding: 10px;
   text-align: center;
   color: #ffffff;
@@ -1444,7 +1441,7 @@ body {
   width: 940px;
   height: 446px;
   bottom: -29px;
-  left: 130px;
+  left: 133px;
   background-color: #e5e5e5;
   background: url("../img/img_map_hover.jpg") -133px -256px no-repeat;
   -webkit-box-shadow: 0 0 12px 3px #c4c3c4;
@@ -1457,26 +1454,12 @@ body {
   width: 620px;
   top: 118px;
   left: 161px;
-  z-index: 500;
+  z-index: 1;
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
   -webkit-box-shadow: 0 15px 27px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 27px 10px rgba(0, 0, 0, 0.5);
 }
-
-
-.about--show {
-  display: block;
-  animation: bounce 1.0s;
-}
-
-@keyframes bounce {
-    0% {transform: translateY(-1200px);}
-    50% {transform: translateY(300px);}
-    80% {transform: translateY(-10px);}
-   100% {transform: translateY(0);}
-}
-
 .about__layout {
   margin: 0 80px;
 }
@@ -1553,24 +1536,9 @@ body {
           box-shadow: 0 42px 27px 10px rgba(0, 0, 0, 0.4);
   z-index: 500;
 }
-
-.basket-dialog--show{    
-  display: block;
-  animation: bounce1 1.0s;
-}
-
-@keyframes bounce1 {
-    0% {transform: translate(-50%,-1200px);}
-    50% {transform: translate(-50%,300px);}
-    80% {transform: translate(-50%,-10px);}
-   100% {transform: translate(-50%,0);}
-}
-    
-
 .basket-dialog__layout {
   margin: 0 80px;
 }
-
 .basket-dialog__check {
   display: inline-block;
   vertical-align: middle;

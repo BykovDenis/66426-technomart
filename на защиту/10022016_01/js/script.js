@@ -150,8 +150,9 @@ function slider(){
     var frm_about = document.querySelector(".about");
         
     about.addEventListener("click", function(){
-    
-        frm_about.classList.add("about--show");
+        
+        frm_about.style.display = "block";  
+        about_close.style.display = "block";
         
     });
     
@@ -176,7 +177,8 @@ function slider(){
 
         var map = document.querySelector(".information__map--hover");
 
-        frm_about.classList.remove("about--show");
+        about_close.style.display = "none";
+        frm_about.style.display = "none";
 
     });  
     
@@ -308,8 +310,9 @@ function catalog(){
      // Отобразить окно добавления в корзину
     
     goods_buy.addEventListener("click", function(){
-    
-      basket_dialog.classList.add("basket-dialog--show");
+        
+       basket_dialog.style.display = "block";
+       basket_dialog_close.style.display = "block";
         
     });
         
@@ -318,7 +321,8 @@ function catalog(){
     
     basket_dialog_close.addEventListener("click", function(){
         
-        basket_dialog.classList.remove("basket-dialog--show");
+       basket_dialog.style.display = "none";
+       basket_dialog_close.style.display = "none";
         
     }); 
 
