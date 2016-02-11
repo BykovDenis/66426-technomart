@@ -124,7 +124,6 @@
 body {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 .icon-search,
 .icon-bookmark,
@@ -167,6 +166,8 @@ body {
 }
 .icon-basket {
   padding-left: 14px;
+  font-size: 17px;
+  line-height: 18px;
 }
 .icon-bookmark {
   padding-left: 12px;
@@ -218,8 +219,7 @@ body {
   background-color: #f1f5f7;
   /*margin-bottom: 59px;*/
 }
-.top-menu {
-  width: 1200px;
+.top-menu {  
   background-color: #293449;
   max-height: 42px;
 }
@@ -260,6 +260,7 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .rules li:first-of-type {
   position: relative;
   float: left;
@@ -1446,9 +1447,13 @@ body {
   height: 446px;
   bottom: -29px;
   left: 130px;
-  background-color: #e5e5e5;
-  
+  background-color: #e5e5e5;    
+  background: url("../img/img_map_hover.jpg") -133px -256px no-repeat;
+  -webkit-box-shadow: 0 0 12px 3px #c4c3c4;
+          box-shadow: 0 0 12px 3px #c4c3c4;
+       
 }
+
   
 .map{
 
@@ -1457,12 +1462,6 @@ body {
 
 }  
   
-  /*
-  background: url("../img/img_map_hover.jpg") -133px -256px no-repeat;
-  -webkit-box-shadow: 0 0 12px 3px #c4c3c4;
-          box-shadow: 0 0 12px 3px #c4c3c4;
-   */
-
 .about {
   position: absolute;
   display: none;
