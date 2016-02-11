@@ -127,7 +127,29 @@ function slider(){
         var map = document.querySelector(".information__map--hover");
 
         map_close.style.display = "block";
-        map.style.display = "block";    
+        map.style.display = "block";  
+		
+		// Окно интерактивной карты
+		(function(){
+		
+		   	  var piter = {lat: 59.9387942, lng: 30.323083300000008};
+			  var center = {lat:59.939462, lng:30.316732};   //59.939462, 30.316732
+			  var map = new google.maps.Map(document.getElementById('map'), {
+				scaleControl: true,
+				center: center,			  
+				zoom: 16				
+			  });
+			  
+			  var infowindow = new google.maps.InfoWindow;
+			  infowindow.setContent('<b>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19</b>');
+
+			  var marker = new google.maps.Marker({map: map, position: piter});
+			  marker.addListener('click', function() {
+				infowindow.open(map, marker);
+			  });  
+			  
+			  
+		})();   		
 
     });
 
@@ -141,7 +163,8 @@ function slider(){
         map_close.style.display = "none";
         map.style.display = "none";
 
-    });    
+    });  
+
     
     // Открыть окно для отзыва
     

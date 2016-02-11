@@ -461,12 +461,12 @@
                 заехав в наш офис:
               </p>
               <div class="information__map">
-			    <img src="img/img_map.jpg" width="300" height="158" alt="Заблудились? Напишите нам!">
-               
+			    <img src="img/img_map.jpg" width="300" height="158" alt="Заблудились? Напишите нам!">               
                 <div class="information__map--hover">
-				  <i id="map_close" class="icon-close"></i>
-				  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5924635073663!2d30.321238816183264!3d59.93890436903915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0x4fb07a96e53deaae!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE2LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1455168949644" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div>
+					<div id="map" class="map">						
+					</div>
+					<i id="map_close" class="icon-close"></i>
+				</div>				
               </div>
               <button type="button" id="map_show" class="btn-lnk btn-lnk--information2">Заблудились? Напишите нам!</button>
             </div>
@@ -538,6 +538,8 @@
         </div>
       </div>
     </footer>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgjyr7w5tXCAn5-3sETmXNDymaDIsy0N8&amp;"
+        async defer></script>         
     <script src="js/script.js"></script>
   </body>
 </html>

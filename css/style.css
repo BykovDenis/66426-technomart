@@ -207,6 +207,7 @@ body {
   height: 21px;
   background: url("../img/icon_close.png") 0 0 no-repeat;
   cursor: pointer;
+  z-index: 1000;
 }
 .clearfix:after {
   display: table;
@@ -1437,7 +1438,7 @@ body {
   margin-bottom: 33px;
   cursor: pointer;
 }
-.information__map--hover {
+.information__map--hover{
   position: absolute;
   display: none;
   z-index: 100;
@@ -1446,10 +1447,22 @@ body {
   bottom: -29px;
   left: 130px;
   background-color: #e5e5e5;
+  
+}
+  
+.map{
+
+  width: 940px;
+  height: 446px;
+
+}  
+  
+  /*
   background: url("../img/img_map_hover.jpg") -133px -256px no-repeat;
   -webkit-box-shadow: 0 0 12px 3px #c4c3c4;
           box-shadow: 0 0 12px 3px #c4c3c4;
-}
+   */
+
 .about {
   position: absolute;
   display: none;
