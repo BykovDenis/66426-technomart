@@ -131,7 +131,8 @@
         var map_show = document.getElementById("map_show");
         var map_close = document.getElementById("map_close");
 
-        map_show.addEventListener("click", function(){
+        map_show.addEventListener("click", function(event){
+            event.preventDefault();
 
             var map = document.querySelector(".information__map--hover");
 
@@ -184,8 +185,9 @@
 
     if(about){
         
-        about.addEventListener("click", function(){
-
+        
+        about.addEventListener("click", function(event){
+            event.preventDefault();
             frm_about.classList.add("about--show");
 
         });

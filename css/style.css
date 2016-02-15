@@ -1021,14 +1021,21 @@ body {
   width: 230px;
 }
 .btn-lnk--information {
-  width: 220px;
+  width: 203px;
   outline: none;
 }
-.btn-lnk--information2,
-.btn-lnk--message-send {
-  width: 100%;
+.btn-lnk--information2
+ {
+  width: 277px;
   outline: none;
 }
+
+.btn-lnk--message-send{
+
+    width: 100%;
+    outline: none;
+}
+
 .btn-lnk--order {
   margin-right: 15px;
   width: 220px;
@@ -1454,6 +1461,14 @@ body {
        
 }
 
+.information__map--hover.information__map--show{
+    
+    display: block;
+    position: static;
+    margin: 10px auto;
+    
+}
+
   
 .map{
 
@@ -1487,6 +1502,22 @@ body {
     50% {transform: translateY(300px);}
     80% {transform: translateY(-10px);}
    100% {transform: translateY(0);}
+}
+
+.about.about--dialog{    
+     
+  position: static;  
+  display: block;
+    
+  margin:0 auto;
+  
+  height: 423px;
+  width: 620px;    
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  -webkit-box-shadow: 0 15px 27px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 15px 27px 10px rgba(0, 0, 0, 0.5);
+    
 }
 
 .about__layout {
@@ -1547,6 +1578,7 @@ body {
   background-color: #f1f1f1;
   padding: 35px 0;
 }
+
 .basket-dialog {
   display: none;
   position: absolute;
